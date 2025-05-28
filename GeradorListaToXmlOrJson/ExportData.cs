@@ -32,7 +32,7 @@ public static class ExportData <T>
 
             try
             {
-                using (var fs = new FileStream(file+"\\dados.json", FileMode.Create))
+                using (var fs = new FileStream(file+".json", FileMode.Create))
                     using (var sw = new StreamWriter(fs))
                     {
                     sw.WriteLine(json);
@@ -50,7 +50,7 @@ public static class ExportData <T>
 
             try
             {
-                using (var fs = new FileStream(file + "\\dados.xml", FileMode.Create))
+                using (var fs = new FileStream(file + ".xml", FileMode.Create))
                     using ( var sw = new StreamWriter(fs))
                     {
                     serialize.Serialize(sw, data);
