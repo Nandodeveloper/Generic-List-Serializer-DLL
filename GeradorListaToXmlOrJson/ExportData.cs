@@ -32,7 +32,7 @@ public static class ExportData <T>
 
             try
             {
-                using (var fs = new FileStream(file+".json", FileMode.Create))
+                using (var fs = new FileStream(file + ".json", FileMode.Create))
                     using (var sw = new StreamWriter(fs))
                     {
                     sw.WriteLine(json);
